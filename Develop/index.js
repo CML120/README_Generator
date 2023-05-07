@@ -81,10 +81,33 @@ const questions = [
     },];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) throw new Error(err);
+        console.log("Readme file created successfully!")
+    })
+}
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    console.log(`
+=============================================================================================
+                         __                                                   __            
+    ________  ____ _____/ /___ ___  ___     ____ ____  ____  ___  _________ _/ /_____  _____
+   / ___/ _ \/ __  / __  / __  __ \/ _ \   / __  / _ \/ __ \/ _ \/ ___/ __  / __/ __ \/ ___/
+  / /  /  __/ /_/ / /_/ / / / / / /  __/  / /_/ /  __/ / / /  __/ /  / /_/ / /_/ /_/ / /    
+ /_/   \___/\__,_/\__,_/_/ /_/ /_/\___/   \__, /\___/_/ /_/\___/_/   \__,_/\__/\____/_/     
+                                         /____/
+                              Welcome to the ReadMe Generator! 
+    Please enter information into the following prompts to generate your README file.
+=============================================================================================
+    `);
+
+    inquirer.prompt(questions)
+        .then(data => {
+            writeToFile("readme.md", generateMarkdown(data))
+        })
+ }
 
 // Function call to initialize app
 init();
