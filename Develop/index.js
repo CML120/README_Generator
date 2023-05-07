@@ -106,7 +106,7 @@ eeeee  eeee eeeee eeeee eeeeeee eeee   eeeee eeee eeeee eeee eeeee  eeeee eeeee 
 
     inquirer.prompt(questions)
         .then(data => {
-            writeToFile("readme.md", generateMarkdown(data))
+            writeToFile("README.md", generateMarkdown(data))
         })
  }
 
