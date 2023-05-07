@@ -36,6 +36,66 @@ const questions = [
         }
     },
 
+    // install instructions
+    {
+        type: 'input',
+        name: 'install',
+        message: 'Please provide installation instructions for the project',
+        validate: installInput => {
+            if (installInput) {
+                return true;
+            } else {
+                console.log('This is a required field, please provide installation instructions!');
+                return false;
+            }
+        }
+    },
+
+    // usage instructions
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Please provide usage instructions for the project',
+        validate: usagelInput => {
+            if (usagelInput) {
+                return true;
+            } else {
+                console.log('This is a required field, please provide instructions for using this project!');
+                return false;
+            }
+        }
+    },
+
+    // usage instructions
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'Please provide instructions on how users can contribution to the project',
+        validate: contributionInput => {
+            if (contributionInput) {
+                return true;
+            } else {
+                console.log('This is a required field, please contribution instructions for this project!');
+                return false;
+            }
+        }
+    },
+
+    // test instructions
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Please provide testing instructions for the project',
+        validate: testInput => {
+            if (testInput) {
+                return true;
+            } else {
+                console.log('This is a required field, please provide instructions for testing this project!');
+                return false;
+            }
+        }
+    },
+
     //license selection
     {
         type: 'list',
@@ -108,7 +168,7 @@ eeeee  eeee eeeee eeeee eeeeeee eeee   eeeee eeee eeeee eeee eeeee  eeeee eeeee 
         .then(data => {
             writeToFile("README.md", generateMarkdown(data))
         })
- }
+}
 
 // Function call to initialize app
 init();
