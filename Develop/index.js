@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('.utils/generateMarkdown');
+//const generateMarkdown = require('.utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -92,12 +92,13 @@ function writeToFile(fileName, data) {
 function init() {
     console.log(`
 =============================================================================================
-                         __                                                   __            
-    ________  ____ _____/ /___ ___  ___     ____ ____  ____  ___  _________ _/ /_____  _____
-   / ___/ _ \/ __  / __  / __  __ \/ _ \   / __  / _ \/ __ \/ _ \/ ___/ __  / __/ __ \/ ___/
-  / /  /  __/ /_/ / /_/ / / / / / /  __/  / /_/ /  __/ / / /  __/ /  / /_/ / /_/ /_/ / /    
- /_/   \___/\__,_/\__,_/_/ /_/ /_/\___/   \__, /\___/_/ /_/\___/_/   \__,_/\__/\____/_/     
-                                         /____/
+                                                                                             
+eeeee  eeee eeeee eeeee eeeeeee eeee   eeeee eeee eeeee eeee eeeee  eeeee eeeee eeeee eeeee  
+8   8  8    8   8 8   8 8  8  8 8      8   8 8    8   8 8    8   8  8   8   8   8  88 8   8  
+8eee8e 8eee 8eee8 8e  8 8e 8  8 8eee   8e    8eee 8e  8 8eee 8eee8e 8eee8   8e  8   8 8eee8e 
+88   8 88   88  8 88  8 88 8  8 88     88 "8 88   88  8 88   88   8 88  8   88  8   8 88   8 
+88   8 88ee 88  8 88ee8 88 8  8 88ee   88ee8 88ee 88  8 88ee 88   8 88  8   88  8eee8 88   8
+
                               Welcome to the ReadMe Generator! 
     Please enter information into the following prompts to generate your README file.
 =============================================================================================
