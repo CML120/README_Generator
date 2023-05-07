@@ -24,3 +24,7 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions  
 WHEN I click on the links in the Table of Contents  
 THEN I am taken to the corresponding section of the README  
+
+
+https://user-images.githubusercontent.com/126404917/236705074-b9237558-333d-444b-9c6a-97b803337746.mp4
+
