@@ -75,7 +75,7 @@ const questions = [
             if (contributionInput) {
                 return true;
             } else {
-                console.log('This is a required field, please contribution instructions for this project!');
+                console.log('This is a required field, please provide contribution instructions for this project!');
                 return false;
             }
         }
