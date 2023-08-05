@@ -2,7 +2,7 @@
 Module 9: Node.js Professional README Generator project  
 This project uses the inquirer and fs libraries in Node.js to create a README generator.
 
-
+```md
 # User Story
 AS A developer  
 I WANT a README generator  
@@ -24,7 +24,9 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions  
 WHEN I click on the links in the Table of Contents  
 THEN I am taken to the corresponding section of the README  
+```
 
+https://user-images.githubusercontent.com/126404917/236705074-b9237558-333d-444b-9c6a-97b803337746.mp4  
+Please contact [CML120](https://github.com/CML120) at cheelor922@gmail.com with any questions.
 
-https://user-images.githubusercontent.com/126404917/236705074-b9237558-333d-444b-9c6a-97b803337746.mp4
 
