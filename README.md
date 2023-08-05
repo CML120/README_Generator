@@ -26,7 +26,7 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README  
 ```
 
-https://user-images.githubusercontent.com/126404917/236705074-b9237558-333d-444b-9c6a-97b803337746.mp4  
+https://drive.google.com/file/d/1QpxHTb1zitsj_9BKa75QRS87MDyrfu-M/view?usp=drive_link  
 Please contact [CML120](https://github.com/CML120) at cheelor922@gmail.com with any questions.
 
 
